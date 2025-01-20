@@ -29,7 +29,7 @@ void main() {
 
     gl_Position = vec4(pixel_position * pixel_to_viewport_multiplier + viewport_offset, 0.0, 1.0);
 
-    vec2 uv_size = size * (1 / sprite_atlas_size);
+    vec2 uv_size = 1 / sprite_atlas_size * size;
     vec2 uv_location = 1 / sprite_atlas_size * location;
     vec2 uv_position = uv_size * vertex_position;
 
