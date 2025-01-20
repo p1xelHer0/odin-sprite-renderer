@@ -1,0 +1,3 @@
+[submodule "bin/sokol-tools-bin"]
+	path = bin/sokol-tools-bin
+	url = https://github.com/floooh/sokol-tools-bin

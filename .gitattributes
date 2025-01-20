@@ -1,0 +1,3 @@
+src/third_party/** linguist-vendored
+bin/** linguist-vendored
+src/**.glsl.odin linguist-generated
