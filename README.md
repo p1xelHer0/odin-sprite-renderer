@@ -4,7 +4,7 @@ A 320x180 sprite renderer with automatic resolution scaling written in [Odin](ht
 
 I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteriorating a bit so extracting the code and writing all these comments felt like a good exercise. Hopefully someone else (and me for that matter) can learn something from this.
 
-I commented the code to my best ability to explain what's happeneing.
+I commented the code to my best ability to explain what's happening.
 
 Some non-renderer code (ticks, input handling via `sokol_app`) can be found in [`non_renderer_code.odin`](src/non_renderer_code.odin) if you are interested. It showcases some neat Odin features as well!
 
