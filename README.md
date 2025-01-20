@@ -18,6 +18,24 @@ The bindings to the `sokol headers` are included in [`src/third_party`](src/thir
 
 - The sokol headers are version [`sokol-odin @ cee69e0`](https://github.com/floooh/sokol-odin/commit/cee69e0f828aade2e7a999482052e8af758bfe6e)
 
+## Compile sokol headers
+
+Before we run the program we need to compile the sokol headers:
+
+```
+# Linux
+cd ./src/third_party/sokol
+./build_clibs_linux.sh
+
+# macOS
+cd ./src/third_party/sokol
+./build_clibs_linux.sh
+
+# Windows
+cd src\third_party\sokol
+build_clibs_windows.cmd
+```
+
 ## Running the program
 
 Run the Odin compiler in the [`src directory`](src). Move with `WASD` or you arrow keys. Press `Q` to quit or `F` to toggle fullscreen.
@@ -26,17 +44,11 @@ Run the Odin compiler in the [`src directory`](src). Move with `WASD` or you arr
 odin run src
 ```
 
-If you for some reason want to force OpenGL you can do the following:
-
-```
-odin run src -define:SOKOL_USE_GL=true
-```
-
 ## Why Odin and sokol?
 
-Honesly I don't know. I just got a very good feeling from both of them! I tried a myriad of languages but Odin stuck with me. I like the syntax and the simplicity, it feel intuitive. sokol felt good because it wasn't overwhelming and had good examples in C (instead of C++).
+I got a good feeling from both of them! I tried a myriad of languages but Odin stuck with me. I like the syntax and the simplicity, it feel intuitive. sokol felt good because it wasn't overwhelming and had good examples in C (instead of C++).
 
-I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result. 
+I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result.
 
 There are probably a lot of things that can be done better here, graphics programming seems to be the deepest of rabbit holes there is! If you have any feedback feel free to reach out on X, Discord, here or any other place on the indernet under the same name `@p1xelHer0`.
 
@@ -70,47 +82,21 @@ If you want to recompile the shaders you can do so with [sokol-shdc](https://git
 I've included a binary of it as a submodule in this repository. Get it by getting the Git submodules:
 
 ```
-
 git submodule update --init --recursive
-
 ```
 
 Compile the shaders with `sokol-shdc` found in the directory: [`./bin/sokol-tools-bin/bin/{linux,osx,osx_arm64,win32}`](https://github.com/floooh/sokol-tools-bin/tree/d80b1d8f20fef813092ba37f26723d3880839651/bin)
 
-You should be able to copy paste the commands below for your platform to do compile the shader.
-
-### Compiling for Linux
-
 ```
-
+# Linux
 ./bin/sokol-tools-bin/bin/linux/sokol-shdc -i src/shaders/shader.glsl -o src/shaders/shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 
-```
-
-### Compiling for Windows
-
-```
-
-bin\sokol-tools-bin\bin\win32\sokol-shdc -i src\shaders\shader.glsl -o src\shaders\shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
-
-```
-
-### Compiling for macOS (ARM)
-
-```
-
+# macOS (ARM)
 ./bin/sokol-tools-bin/bin/osx_arm64/sokol-shdc -i src/shaders/shader.glsl -o src/shaders/shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 
-```
-
-### Compiling for macOS (Intel)
-
-```
-
+# macOS (Intel)
 ./bin/sokol-tools-bin/bin/osx/sokol-shdc -i src/shaders/shader.glsl -o src/shaders/shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 
+# Windows
+bin\sokol-tools-bin\bin\win32\sokol-shdc -i src\shaders\shader.glsl -o src\shaders\shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 ```
-
-### Compiling for macOS OpenGL
-
-Run the same command but change `glsl430` to `glsl410`.
