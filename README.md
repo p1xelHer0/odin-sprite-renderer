@@ -1,6 +1,6 @@
 # odin-sprite-renderer
 
-A 320 x 180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
+A 320x180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
 
 I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteriorating a bit so extracting the code and writing all these comments felt like a good exercise. Hopefully someone else (and me for that matter) can learn something from this.
 
@@ -85,7 +85,7 @@ I've been slowly getting into graphics and systems programming. I stumbled upon 
 
 There are probably a lot of things that can be done better here, graphics programming seems to be the deepest of rabbit holes there is! If you have any feedback feel free to reach out on X, Discord, here or any other place on the indernet under the same name `@p1xelHer0`.
 
-After looking into different ways to render a "pixel art" game I landed in this technique which is probably the "dumbest"(?): render the game to 320 x 180 and then scale it up the match the display.
+After looking into different ways to render a "pixel art" game I landed in this technique which is probably the "dumbest"(?): render the game to 320x180 and then scale it up the match the display.
 
 ## Acknowledgements
 

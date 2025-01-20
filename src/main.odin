@@ -19,7 +19,7 @@ import slog "third_party/sokol/log"
 
 import "shaders"
 
-// Our renderer will have a resolution of 320 x 180, 16:9
+// Our renderer will have a resolution of 320x180, 16:9
 // - 40 tiles wide
 // - 22.5 tiles high, with the half tile being on the top
 TILES_X :: 40
