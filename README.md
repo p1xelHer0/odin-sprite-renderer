@@ -12,6 +12,10 @@ https://github.com/user-attachments/assets/34b047c1-2d15-486f-90b8-97636b0b255e
 
 https://github.com/user-attachments/assets/4c524634-6673-4323-99b2-cfe33af50527
 
+## TODO
+
+Add comments to shaders!
+
 ## Odin and sokol
 
 The bindings to the `sokol headers` are included in [`src/third_party`](src/third_party)
