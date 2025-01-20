@@ -73,7 +73,7 @@ Compile the shaders with `sokol-shdc` found in the directory: [`./bin/sokol-tool
 
 ## Why Odin and sokol?
 
-I got a good feeling from both of them! I tried a myriad of languages but Odin stuck with me. I like the syntax and the simplicity, it feel intuitive. sokol felt good because it wasn't overwhelming and had good examples in C (instead of C++).
+I got a good feeling from both of them! I tried a myriad of languages but Odin stuck with me. I like the syntax and the simplicity - it feels intuitive. sokol felt good because it wasn't overwhelming and had good examples in C (instead of C++).
 
 I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result.
 
