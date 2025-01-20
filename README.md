@@ -24,6 +24,16 @@ The bindings to the `sokol headers` are included in [`src/third_party`](src/thir
 
 - The sokol headers are version [`sokol-odin @ cee69e0`](https://github.com/floooh/sokol-odin/commit/cee69e0f828aade2e7a999482052e8af758bfe6e)
 
+- Uses the [vendored `stb_image`](https://github.com/odin-lang/Odin/tree/master/vendor/stb/image)
+
+## Compile `stb`
+
+I _think_ you only need to do this on Linux and macOS:
+
+```
+make -C <PATH_TO_ODIN>/vendor/stb/src
+```
+
 ## Compile sokol headers
 
 Before we run the program we need to compile the sokol headers:
