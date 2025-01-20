@@ -6,7 +6,7 @@ A try to explain things to my best ability in the comments found in the source.
 
 Some non-renderer code (ticks, input handling via `sokol_app`) can be found in [`non_renderer_code.odin`](src/non_renderer_code.odin) if you are interested. It showcases some neat Odin features as well!
 
-![program running](res/running.mp4)
+https://github.com/user-attachments/assets/34b047c1-2d15-486f-90b8-97636b0b255e
 
 ## Odin and sokol
 
