@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/fd1d6494-bb8a-4e81-ab92-4516689c1896
 # odin-sprite-renderer
 
 A 320 x 180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
