@@ -2,7 +2,9 @@
 
 A 320 x 180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
 
-A try to explain things to my best ability in the comments found in the source.
+I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteoriating a bit so extracting the code and writing all these comments felt like a good exercise and refresher. Hopefully someone else (and me for that matter, I would like feedback) can learn something from this!
+
+I commented the code to my best ability to explain what's happeneing.
 
 Some non-renderer code (ticks, input handling via `sokol_app`) can be found in [`non_renderer_code.odin`](src/non_renderer_code.odin) if you are interested. It showcases some neat Odin features as well!
 
@@ -32,16 +34,15 @@ odin run src -define:SOKOL_USE_GL=true
 
 ## Why?
 
-Sharing is better than not sharing. Also I kinda wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteoriating a bit so doing this and writing the comments is a good exercise for myself.
+I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result. 
 
-I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result. I added a lot of comments, for myself, and hopefully others, in the source code.
 There are probably a lot of things that can be done better here, graphics programming seems to be the deepest of rabbit holes there is! If you have any feedback feel free to reach out on X, Discord, here or any other place on the indernet under the same name `@p1xelHer0`.
 
-After looking into different ways to render a "pixel art" game I landed in this technique which is probably the "dumbest": render the game to 320 x 180 and then scale it up the match the display.
+After looking into different ways to render a "pixel art" game I landed in this technique which is probably the "dumbest"(?): render the game to 320 x 180 and then scale it up the match the display.
 
 ## Acknowledgements
 
-I learned most of the things by following [LearnOpenGL](https://learnopengl.com/) in tandem with reading them [written in sokol](https://github.com/zeromake/learnopengl-examples), reading the [`sokol_gfx source code`](https://github.com/floooh/sokol/blob/master/sokol_gfx.h), getting help from the awesome [Odin Discord](https://discord.com/invite/odinlang) and [d7samurai's Gists](https://gist.github.com/d7samurai). As you can see I even use the same sprite as d7samurai here... I thought it fit well to showcase.
+I learned most of the things by following [LearnOpenGL](https://learnopengl.com/) in tandem with reading the exercises [written in sokol](https://github.com/zeromake/learnopengl-examples), reading the [`sokol_gfx source code`](https://github.com/floooh/sokol/blob/master/sokol_gfx.h), getting help from the awesome [Odin Discord](https://discord.com/invite/odinlang) and [d7samurai's Gists](https://gist.github.com/d7samurai). As you can see I even use the same sprite as d7samurai here... I thought it fit well to showcase.
 
 The sprite sheet usees the "Pink Monster" from [Tiny Heroes @ CraftPix.net](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/)
 
