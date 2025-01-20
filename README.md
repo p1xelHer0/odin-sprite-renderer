@@ -2,7 +2,7 @@
 
 A 320 x 180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
 
-I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteoriating a bit so extracting the code and writing all these comments felt like a good exercise and refresher. Hopefully someone else (and me for that matter, I would like feedback) can learn something from this!
+I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteoriating a bit so extracting the code and writing all these comments felt like a good exercise. Hopefully someone else (and me for that matter) can learn something from this.
 
 I commented the code to my best ability to explain what's happeneing.
 
@@ -32,7 +32,9 @@ If you for some reason want to force OpenGL you can do the following:
 odin run src -define:SOKOL_USE_GL=true
 ```
 
-## Why?
+## Why Odin and sokol?
+
+Honesly I don't know. I just got a very good feeling from both of them! I tried a myriad of languages but Odin stuck with me. I like the syntax and the simplicity, it feel intuitive. sokol felt good because it wasn't overwhelming and had good examples in C (instead of C++).
 
 I've been slowly getting into graphics and systems programming. I stumbled upon Odin and sokol and figured I'd give them a try. I always liked the look of games like [Celeste](https://www.celestegame.com/) and wanted to figure out how I could render a game like those. This is the result. 
 
