@@ -89,6 +89,9 @@ After looking into different ways to render a "pixel art" game I landed in this 
 
 ## Acknowledgements
 
-I learned most of the things by following [LearnOpenGL](https://learnopengl.com/) in tandem with reading the exercises [written in sokol](https://github.com/zeromake/learnopengl-examples), reading the [`sokol_gfx source code`](https://github.com/floooh/sokol/blob/master/sokol_gfx.h), getting help from the awesome [Odin Discord](https://discord.com/invite/odinlang) and [d7samurai's Gists](https://gist.github.com/d7samurai). As you can see I even use the same sprite as d7samurai here... I thought it fit well to showcase.
-
-The sprite sheet usees the "Pink Monster" from [Tiny Heroes @ CraftPix.net](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/).
+- I learned most of the things by following [LearnOpenGL](https://learnopengl.com/) in tandem with reading the exercises [written in sokol](https://github.com/zeromake/learnopengl-examples)
+- Reading the [`sokol_gfx source code`](https://github.com/floooh/sokol/blob/master/sokol_gfx.h) and [`sokol-samples`](https://github.com/floooh/sokol-samples) over and over again
+- Getting help from [floooh](https://github.com/floooh), the creator of sokol. I don't know how he has the time, but he just helps people!
+- Getting help from the [Odin Discord](https://discord.com/invite/odinlang), there is a dedicated [`#gpu-programming` channel](https://discord.com/channels/568138951836172421/931610740840865828) there with a bunch of smart people, including [gingerBill](https://www.gingerbill.org/), the creator of Odin. They all just... help you!
+- Reading [d7samurai's Gists](https://gist.github.com/d7samurai) over and over again. It's in DXD11 but techniques are similar. As you can see I even use the same sprite as d7samurai for my examples... I thought it fit well to showcase.
+- The sprite sheet usees the "Pink Monster" from [Tiny Heroes @ CraftPix.net](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/).
