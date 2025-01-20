@@ -85,4 +85,4 @@ After looking into different ways to render a "pixel art" game I landed in this 
 
 I learned most of the things by following [LearnOpenGL](https://learnopengl.com/) in tandem with reading the exercises [written in sokol](https://github.com/zeromake/learnopengl-examples), reading the [`sokol_gfx source code`](https://github.com/floooh/sokol/blob/master/sokol_gfx.h), getting help from the awesome [Odin Discord](https://discord.com/invite/odinlang) and [d7samurai's Gists](https://gist.github.com/d7samurai). As you can see I even use the same sprite as d7samurai here... I thought it fit well to showcase.
 
-The sprite sheet usees the "Pink Monster" from [Tiny Heroes @ CraftPix.net](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/)
+The sprite sheet usees the "Pink Monster" from [Tiny Heroes @ CraftPix.net](https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/).
