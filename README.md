@@ -32,8 +32,8 @@ cd ./src/third_party/sokol
 ./build_clibs_linux.sh
 
 # Windows
-cd src\third_party\sokol
-build_clibs_windows.cmd
+cd .\src\third_party\sokol
+.\build_clibs_windows.cmd
 ```
 
 ## Running the program
@@ -68,7 +68,7 @@ Compile the shaders with `sokol-shdc` found in the directory: [`./bin/sokol-tool
 ./bin/sokol-tools-bin/bin/osx/sokol-shdc -i src/shaders/shader.glsl -o src/shaders/shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 
 # Windows
-bin\sokol-tools-bin\bin\win32\sokol-shdc -i src\shaders\shader.glsl -o src\shaders\shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
+.\bin\sokol-tools-bin\bin\win32\sokol-shdc -i src\shaders\shader.glsl -o src\shaders\shader.glsl.odin -l glsl430:hlsl5:metal_macos -f sokol_odin
 ```
 
 ## Why Odin and sokol?
