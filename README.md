@@ -2,6 +2,11 @@
 
 A 320x180 sprite renderer with automatic resolution scaling written in [Odin](https://github.com/odin-lang/odin) using the [sokol headers](https://github.com/floooh/sokol) in a single file.
 
+- 2 draw calls: 1 instanced draw call for all the sprites and 1 for the upscaling
+- No dynamic allocations - uses a fixed size array with a size of `BUDGET_SPRITE`
+- Assumes you use a single sprite sheet
+- Painter's alogorithm
+
 I wrote this renderer once without revisiting it for a long time. I felt like my knowledge was deteriorating a bit so extracting the code and writing all these comments felt like a good exercise. Hopefully someone else (and me for that matter) can learn something from this.
 
 I commented the code to my best ability to explain what's happening.
